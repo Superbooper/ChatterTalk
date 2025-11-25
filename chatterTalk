@@ -1,0 +1,17 @@
+# using speech recognizer chatter bot tkinter, and pyttsx3
+# i will create an application that allows for vocal conversations with chatterbot
+# BASIC PSEUDO
+# get users first statement from microphone
+# turn into an audio file
+# read audio file into string
+# submit string to chatterbot
+# get chatterbot response
+# speak and display chatterbot response into window
+# await user speech once submitted display string into window to confirm is correct before re submitting to chatterbot
+# basic components
+# chatter bot object that gets user strings and returns responses as strings
+# a user input object that gets microphone data and turns into audio file
+# a audio file handler that converts to a string and checks if it is correct
+# a tkinter based main to handle all buttons and displays
+# EXTRAS 
+# choose between training datas and customize voices
