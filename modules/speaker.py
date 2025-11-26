@@ -1,5 +1,9 @@
 import pyttsx3
 def speaker(words):
+    '''
+    Speaker function takes any data type in and speaks aloud
+    in =  bool, list, string, int
+    '''
     #check if words are string
     if words == str:
         word_list = words.split()
@@ -15,7 +19,7 @@ def speaker(words):
         exit
     #intialize speech engine
     engine = pyttsx3.init()
-    engine.setProperty('rate', 210)
+    engine.setProperty('rate', 195)
     engine.setProperty('volume', 1.0)
     #read engine through list
     word_length = len(word_list)
@@ -33,4 +37,4 @@ def speaker(words):
             engine.runAndWait()
         except IndexError:
             return
-speaker('pop corn fish chicken happy')
+speaker(['LIKE',True,1])
