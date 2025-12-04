@@ -14,7 +14,7 @@ def speaker(words):
         word_list = words.split()
         # make into string and continue
     else:
-        #exception grab
+        #exception grab using print here because it should never ever hit this
         print("WORDS NOT IN STR OR OTHER DATA TYPES")
         exit
     #intialize speech engine
