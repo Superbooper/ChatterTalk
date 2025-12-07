@@ -15,8 +15,7 @@ def speaker(words):
         # make into string and continue
     else:
         #exception grab using print here because it should never ever hit this
-        print("WORDS NOT IN STR OR OTHER DATA TYPES")
-        exit
+        raise Exception("WORDS NOT IN STR OR OTHER DATA TYPES")
     #intialize speech engine
     engine = pyttsx3.init()
     engine.setProperty('rate', 195)
