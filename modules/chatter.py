@@ -24,6 +24,3 @@ def converse():
     user_input = input()
     response = chatbot.get_response(user_input)
     return response
-
-def output(response):
-    print(response)
