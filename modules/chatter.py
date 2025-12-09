@@ -20,7 +20,6 @@ trainer.train(
     "chatterbot.corpus.english"
 )
 
-def converse():
-    user_input = input()
+def converse(user_input):
     response = chatbot.get_response(user_input)
     return response
