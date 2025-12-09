@@ -21,5 +21,10 @@ trainer.train(
 )
 
 def converse(user_input):
+    '''
+    sends given input to chatterbot and gives back response
+    gets user input: string
+    reurns response: string
+    '''
     response = chatbot.get_response(user_input)
     return response

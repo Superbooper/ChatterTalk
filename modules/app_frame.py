@@ -1,7 +1,7 @@
 import tkinter as tk
 from modules.chatter import converse
 from modules.speaker import speaker
-class chatterTalk(tk.Tk):
+class ChatterTalk(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("Chatter Talk")
@@ -68,6 +68,7 @@ class chatterTalk(tk.Tk):
         function to handle displaying and handling user input and bot responses
         handles inner object variables and has no input or return values
         '''
+        #gets user text and deletes from text box
         message =  self.text_enter.get(1.0, 'end-1c')
         self.text_enter.delete(1.0, 'end')
         self.text_bx.config(state='normal')

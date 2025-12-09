@@ -2,7 +2,9 @@ import pyttsx3
 def speaker(words, rate, volume):
     '''
     Speaker function takes any data type in and speaks aloud
-    in =  bool, list, string, int
+    words to speak =  bool, list, string, int, rate of speech = int, volume = double, float
+
+    does not return any values but should cause a voice to speak the input
     '''
     #check if words are string
     if words == str:
